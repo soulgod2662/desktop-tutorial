@@ -1,5 +1,5 @@
-#include<iosstream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 class ratio
 {
 int num,den;
@@ -15,22 +15,22 @@ void print();
 };
 void ratio::convert()
 {
-cout<<"the ratio is"<<double(num)/double(den);
+cout<<"the ratio is "<<double(num)/double(den);
 }
 void ratio::invert()
 {
-int temp:
+int temp;
 temp=num;
 num=den;
 den=temp;
 }
 void ratio::print()
 {
-cout<<"\n The values are "<<num<<"/"<<dn<<"\n";
+cout<<"\n The values are "<<num<<"/"<<den<<"\n";
 }
-void main()
+int main()
 {
-clrscr();
+
 ratio r;
 r.assign(22,7);
 r.convert();
@@ -38,5 +38,5 @@ r.print();
 r.invert();
 cout<<"after invertng the values:";
 r.print();
-getch();
+
 }
