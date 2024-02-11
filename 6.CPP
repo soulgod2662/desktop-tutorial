@@ -1,5 +1,5 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 class Person
 {
 public:
@@ -13,18 +13,18 @@ class Student:public Person
 public:
 void print()
 {
-cout<<"\n The name of the student is TOM";
+cout<<"\n The name of the student is TOM ";
 }
 };
-void main()
+int main()
 {
-clrscr();
+
 Person*p;
 Person p1;
-p=&p1
+p=&p1;
 p->print();
 Student s1;
 p=&s1;
 p->print();
-getch();
+
 }
