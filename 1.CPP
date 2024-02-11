@@ -1,16 +1,18 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 int main(){
 int a[10],i,k,j,t;
-clrscr();
-cout<<"enter elements";
+
+
 for(i=0;i<10;i++)
 {
+cout<<"enter element ";
 cin>>a[i];
 }
+cout<<"---------The elements are--------- \n";
 for(i=0;i<10;i++)
 {
-cout<<"the elements are "<<a[i]<<endl;
+cout<<a[i]<<endl;
 }
 for(k=1;k<10;k++)
 {
@@ -24,12 +26,12 @@ a[j+1]=t;
 }
 }
 }
-cout<<"sorted array";
+
+cout<<"\n---------sorted array--------- \n";
 for(j=0;j<10;j++)
 {
 cout<<endl<<a[j];
 }
-getch();
+
 return 0;
 }
-
