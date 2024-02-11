@@ -1,12 +1,12 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 
 class Ratio
 {
 public:
 void print()
 {
-cout<<"\n now x is alive";
+cout<<"\n now x is alive \n";
 }
 Ratio()
 {
@@ -17,10 +17,10 @@ cout<<"\n object is born";
 cout<<"object dies";
 }
 };
-void main()
+int main()
 {
-clrscr();
+    
 Ratio r1;
 r1.print();
-getch();
+
 }
